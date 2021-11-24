@@ -7,10 +7,13 @@ import Proyectos from './Proyectos';
 
 export default function App() {
   return (
+    <div className = "body">
     <Router>
       <Route exact path={'/Contacto'} component={Contacto} />
       <Route exact path={'/'} component={Layout} />
       <Route exact path={'/Proyectos'} component={Proyectos} />
     </Router>
+    <Navbar/>
+    </div>
   );
 }
